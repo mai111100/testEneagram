@@ -4,45 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enneagram Quiz</title>
-    <link rel="stylesheet" href="Enneagramquiz.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Home Page -->
-        <div id="home" class="flex-center flex-column">
-            <h1>Welcome to the Enneagram Quiz</h1>
-            <p>Discover your Enneagram personality type with this quiz. Select answers that best reflect your usual behavior.</p>
-            <div class="begin-quiz-container">
-                <button id="begin-quiz">Begin Quiz</button>
-            </div>
+    <div class="quiz-container">
+        <h1>Enneagram Quiz</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="choices"></div>
         </div>
-
-        <!-- Quiz Page -->
-        <div class="quiz-page" id="quiz-page" style="display: none;">
-            <div id="quiz">
-                <h2 id="question">Question</h2>
-                <div id="choices" class="choices">
-                    <!-- Choices will be dynamically injected here -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Results Page -->
-        <div id="results" style="display: none;">
-            <h2>You are ...</h2>
-            <div id="result">
-                <!-- Result will be dynamically injected here -->
-            </div>
-            <div class="button-container">
-                <button id="back-to-home">Back to Home</button>
-            </div>
-        </div>
-
-        <footer>
-            Created for a fun Enneagram personality quiz | <a href="https://github.com/YourGitHub">GitHub</a>
-        </footer>
+        <p id="result"></p>
     </div>
-
-    <script src="EnneagramQuiz.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
